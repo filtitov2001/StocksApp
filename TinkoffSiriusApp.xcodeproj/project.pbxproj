@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -56,15 +56,47 @@
 		2BC928B827B4405C0036C043 /* TinkoffSiriusApp */ = {
 			isa = PBXGroup;
 			children = (
-				2BC928B927B4405C0036C043 /* AppDelegate.swift */,
-				2BC928BB27B4405C0036C043 /* SceneDelegate.swift */,
-				2BC928BD27B4405C0036C043 /* ViewController.swift */,
-				2BC928BF27B4405C0036C043 /* Main.storyboard */,
-				2BC928C227B4405E0036C043 /* Assets.xcassets */,
-				2BC928C427B4405E0036C043 /* LaunchScreen.storyboard */,
-				2BC928C727B4405E0036C043 /* Info.plist */,
+				2BC928CD27B440E30036C043 /* App */,
+				2BC928D027B441C40036C043 /* ViewControllers */,
+				2BC928CE27B441710036C043 /* Storyboards */,
+				2BC928CF27B441840036C043 /* Resouces */,
 			);
 			path = TinkoffSiriusApp;
+			sourceTree = "<group>";
+		};
+		2BC928CD27B440E30036C043 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				2BC928B927B4405C0036C043 /* AppDelegate.swift */,
+				2BC928BB27B4405C0036C043 /* SceneDelegate.swift */,
+				2BC928C727B4405E0036C043 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		2BC928CE27B441710036C043 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2BC928BF27B4405C0036C043 /* Main.storyboard */,
+				2BC928C427B4405E0036C043 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2BC928CF27B441840036C043 /* Resouces */ = {
+			isa = PBXGroup;
+			children = (
+				2BC928C227B4405E0036C043 /* Assets.xcassets */,
+			);
+			path = Resouces;
+			sourceTree = "<group>";
+		};
+		2BC928D027B441C40036C043 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2BC928BD27B4405C0036C043 /* ViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,7 +135,7 @@
 				};
 			};
 			buildConfigurationList = 2BC928B127B4405C0036C043 /* Build configuration list for PBXProject "TinkoffSiriusApp" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -291,7 +323,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RB3BCBLCA6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TinkoffSiriusApp/Info.plist;
+				INFOPLIST_FILE = TinkoffSiriusApp/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Investor;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -306,7 +339,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,7 +352,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RB3BCBLCA6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TinkoffSiriusApp/Info.plist;
+				INFOPLIST_FILE = TinkoffSiriusApp/App/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Investor;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -334,7 +368,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
