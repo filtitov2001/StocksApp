@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  StoksViewController.swift
 //  TinkoffSiriusApp
 //
 //  Created by Felix Titov on 09.02.2022.
@@ -9,13 +9,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class StoksViewController: UIViewController {
 
+    @IBOutlet var companyNameLabel: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        companyNameLabel.text = "Tinkoff"
     }
-
 
 }
 

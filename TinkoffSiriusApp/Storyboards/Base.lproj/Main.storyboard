@@ -1,24 +1,114 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Stoks View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StoksViewController" customModule="TinkoffSiriusApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company name:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="js1-tW-raW">
+                                <rect key="frame" x="40" y="40" width="111" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JRQ-7C-P7u">
+                                <rect key="frame" x="242.5" y="40" width="37.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company name:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="ho5-2Q-JvF">
+                                <rect key="frame" x="40" y="98" width="111" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="19v-ve-DsT">
+                                <rect key="frame" x="242.5" y="98" width="37.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company name:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="aPd-XH-6Bn">
+                                <rect key="frame" x="40" y="156" width="111" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="fe7-Yg-kFF">
+                                <rect key="frame" x="242.5" y="156" width="37.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Company name:" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="rSn-Su-bUk">
+                                <rect key="frame" x="40" y="214" width="111" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="466-qe-4DE">
+                                <rect key="frame" x="242.5" y="214" width="37.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhZ-NL-qzk">
+                                <rect key="frame" x="0.0" y="398" width="320" height="170"/>
+                            </pickerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bhZ-NL-qzk" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="2QF-Zc-tbt"/>
+                            <constraint firstItem="JRQ-7C-P7u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="AyX-sD-A9k"/>
+                            <constraint firstItem="JRQ-7C-P7u" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="js1-tW-raW" secondAttribute="trailing" constant="91.5" id="BZU-7c-qQI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fe7-Yg-kFF" secondAttribute="trailing" constant="40" id="BbS-2V-Qw3"/>
+                            <constraint firstItem="js1-tW-raW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="C4v-vU-pTb"/>
+                            <constraint firstItem="bhZ-NL-qzk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Gx9-w2-91t"/>
+                            <constraint firstItem="466-qe-4DE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="rSn-Su-bUk" secondAttribute="trailing" constant="91.5" id="KxO-bf-zhc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="19v-ve-DsT" secondAttribute="trailing" constant="40" id="Msz-g8-QVy"/>
+                            <constraint firstItem="19v-ve-DsT" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ho5-2Q-JvF" secondAttribute="trailing" constant="91.5" id="Ngb-7t-fSS"/>
+                            <constraint firstItem="bhZ-NL-qzk" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Qo3-sn-bh6"/>
+                            <constraint firstItem="js1-tW-raW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="UxR-M8-NNM"/>
+                            <constraint firstItem="466-qe-4DE" firstAttribute="top" secondItem="fe7-Yg-kFF" secondAttribute="bottom" constant="40" id="W6t-DX-2cP"/>
+                            <constraint firstItem="aPd-XH-6Bn" firstAttribute="top" secondItem="ho5-2Q-JvF" secondAttribute="bottom" constant="40" id="XyR-cD-ooW"/>
+                            <constraint firstItem="19v-ve-DsT" firstAttribute="top" secondItem="JRQ-7C-P7u" secondAttribute="bottom" constant="40" id="c3H-CA-UJh"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JRQ-7C-P7u" secondAttribute="trailing" constant="40" id="dau-td-X1B"/>
+                            <constraint firstItem="bhZ-NL-qzk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jMP-iF-54F"/>
+                            <constraint firstItem="rSn-Su-bUk" firstAttribute="top" secondItem="aPd-XH-6Bn" secondAttribute="bottom" constant="40" id="je2-7A-BDz"/>
+                            <constraint firstItem="fe7-Yg-kFF" firstAttribute="top" secondItem="19v-ve-DsT" secondAttribute="bottom" constant="40" id="kTR-IO-BQM"/>
+                            <constraint firstItem="ho5-2Q-JvF" firstAttribute="top" secondItem="js1-tW-raW" secondAttribute="bottom" constant="40" id="mQH-vX-BTf"/>
+                            <constraint firstItem="ho5-2Q-JvF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="mbC-YP-Lxc"/>
+                            <constraint firstItem="fe7-Yg-kFF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aPd-XH-6Bn" secondAttribute="trailing" constant="91.5" id="pX7-Gw-LFq"/>
+                            <constraint firstItem="rSn-Su-bUk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="sQz-0i-om6"/>
+                            <constraint firstItem="aPd-XH-6Bn" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="tkQ-x4-WTK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="466-qe-4DE" secondAttribute="trailing" constant="40" id="ts7-rx-wcd"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="companyNameLabel" destination="JRQ-7C-P7u" id="4kk-kk-jgJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138.75" y="101.40845070422536"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>
