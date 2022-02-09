@@ -22,8 +22,27 @@ class StoksViewController: UIViewController {
                                 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         companyNameLabel.text = "Tinkoff"
+        
+        companyNamesPickerView.dataSource = self
+        companyNamesPickerView.delegate = self
     }
 
+}
+
+//MARK: Work with UIPickerView
+extension StoksViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        companies.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        Array(companies.keys)[row]
+    }
 }
 
