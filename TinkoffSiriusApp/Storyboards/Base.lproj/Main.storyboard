@@ -67,11 +67,15 @@
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bhZ-NL-qzk">
                                 <rect key="frame" x="0.0" y="398" width="320" height="170"/>
                             </pickerView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="20v-1S-FGc">
+                                <rect key="frame" x="141.5" y="265.5" width="37" height="37"/>
+                            </activityIndicatorView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="bhZ-NL-qzk" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3" id="2QF-Zc-tbt"/>
+                            <constraint firstItem="20v-1S-FGc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4sV-f5-Hyk"/>
                             <constraint firstItem="JRQ-7C-P7u" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="AyX-sD-A9k"/>
                             <constraint firstItem="JRQ-7C-P7u" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="js1-tW-raW" secondAttribute="trailing" constant="91.5" id="BZU-7c-qQI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fe7-Yg-kFF" secondAttribute="trailing" constant="40" id="BbS-2V-Qw3"/>
@@ -84,6 +88,7 @@
                             <constraint firstItem="js1-tW-raW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="UxR-M8-NNM"/>
                             <constraint firstItem="466-qe-4DE" firstAttribute="top" secondItem="fe7-Yg-kFF" secondAttribute="bottom" constant="40" id="W6t-DX-2cP"/>
                             <constraint firstItem="aPd-XH-6Bn" firstAttribute="top" secondItem="ho5-2Q-JvF" secondAttribute="bottom" constant="40" id="XyR-cD-ooW"/>
+                            <constraint firstItem="20v-1S-FGc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Zx0-bt-Y0G"/>
                             <constraint firstItem="19v-ve-DsT" firstAttribute="top" secondItem="JRQ-7C-P7u" secondAttribute="bottom" constant="40" id="c3H-CA-UJh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JRQ-7C-P7u" secondAttribute="trailing" constant="40" id="dau-td-X1B"/>
                             <constraint firstItem="bhZ-NL-qzk" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="jMP-iF-54F"/>
@@ -99,6 +104,7 @@
                     </view>
                     <connections>
                         <outlet property="companyNameLabel" destination="JRQ-7C-P7u" id="4kk-kk-jgJ"/>
+                        <outlet property="companyNamesPickerView" destination="bhZ-NL-qzk" id="zV4-KC-DlU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
