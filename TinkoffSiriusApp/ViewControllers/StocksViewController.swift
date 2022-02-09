@@ -9,7 +9,7 @@
 
 import UIKit
 
-class StoksViewController: UIViewController {
+class StocksViewController: UIViewController {
 
     @IBOutlet var companyNameLabel: UILabel!
     @IBOutlet var companyNamesPickerView: UIPickerView!
@@ -32,7 +32,7 @@ class StoksViewController: UIViewController {
 }
 
 //MARK: Work with UIPickerView
-extension StoksViewController: UIPickerViewDataSource, UIPickerViewDelegate {
+extension StocksViewController: UIPickerViewDataSource, UIPickerViewDelegate {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         1
     }
@@ -45,4 +45,5 @@ extension StoksViewController: UIPickerViewDataSource, UIPickerViewDelegate {
         Array(companies.keys)[row]
     }
 }
+
 
