@@ -12,6 +12,11 @@ import UIKit
 class StocksViewController: UIViewController {
 
     @IBOutlet var companyNameLabel: UILabel!
+    @IBOutlet var symbolLabel: UILabel!
+    @IBOutlet var priceLabel: UILabel!
+    @IBOutlet var priceChangeLabel: UILabel!
+    
+    
     @IBOutlet var companyNamesPickerView: UIPickerView!
     @IBOutlet var actitvityIndicator: UIActivityIndicatorView!
     
@@ -20,21 +25,18 @@ class StocksViewController: UIViewController {
     private let companies: [String: String] = ["Apple": "AAPL",
                                 "Microsoft": "MSFT",
                                 "Google": "GOOG",
-                                "Amazon": "AMN",
+                                "Amazon": "AMZN",
                                 "Facebook": "FB" ]
                                 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        companyNameLabel.text = "Tinkoff"
         
         companyNamesPickerView.dataSource = self
         companyNamesPickerView.delegate = self
         
         actitvityIndicator.hidesWhenStopped = true
         
-        actitvityIndicator.startAnimating()
-        requestQuote(for: "AAPL")
+        requireQuoteUpdate()
     }
 
 }
@@ -53,7 +55,13 @@ extension StocksViewController: UIPickerViewDataSource, UIPickerViewDelegate {
         Array(companies.keys)[row]
     }
     
-
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        actitvityIndicator.startAnimating()
+        companyNameLabel.text = "-"
+        
+        let selectedStock = Array(companies.values)[row]
+        requestQuote(for: selectedStock)
+    }
 }
 
 //MARK: Work with network
@@ -75,6 +83,15 @@ extension StocksViewController {
         
         dataTask.resume()
         
+    }
+    
+    private func requireQuoteUpdate() {
+        actitvityIndicator.startAnimating()
+        
+        let selectedRow = companyNamesPickerView.selectedRow(inComponent: 0)
+        let selectedSymbol = Array(companies.values)[selectedRow]
+        
+        requestQuote(for: selectedSymbol)
     }
     
     private func parseQuote(for data: Data) {
