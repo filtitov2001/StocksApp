@@ -100,22 +100,36 @@ extension StocksViewController {
             
             guard
                 let json = jsonObject as? [String: Any],
-                let companyName = json["companyName"] as? String
+                let companyName = json["companyName"] as? String,
+                let symbolName = json["symbol"] as? String,
+                let price = json["latestPrice"] as? Double,
+                let PriceChange = json["change"] as? Double
             else {
                 print("Invalid Json format!")
                 return
             }
             DispatchQueue.main.async { [self] in
-                self.displayStockInfo(for: companyName)
+                self.displayStockInfo(companyName: companyName,
+                                      symbolName: symbolName,
+                                      price: price,
+                                      PriceChange: PriceChange)
             }
         } catch {
             print("Json parsing error" + error.localizedDescription)
         }
     }
     
-    private func displayStockInfo(for companyName: String) {
-        companyNameLabel.text = companyName
+    private func displayStockInfo(companyName: String,
+                                  symbolName: String,
+                                  price: Double,
+                                  PriceChange: Double) {
         actitvityIndicator.stopAnimating()
+        
+        companyNameLabel.text = companyName
+        symbolLabel.text = symbolName
+        priceLabel.text = "\(price)"
+        priceChangeLabel.text = "\(PriceChange)"
+        
     }
 }
 
