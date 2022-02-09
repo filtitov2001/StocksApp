@@ -3,13 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 53;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2BC928BA27B4405C0036C043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC928B927B4405C0036C043 /* AppDelegate.swift */; };
 		2BC928BC27B4405C0036C043 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC928BB27B4405C0036C043 /* SceneDelegate.swift */; };
-		2BC928BE27B4405C0036C043 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC928BD27B4405C0036C043 /* ViewController.swift */; };
+		2BC928BE27B4405C0036C043 /* StocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC928BD27B4405C0036C043 /* StocksViewController.swift */; };
 		2BC928C127B4405C0036C043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC928BF27B4405C0036C043 /* Main.storyboard */; };
 		2BC928C327B4405E0036C043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC928C227B4405E0036C043 /* Assets.xcassets */; };
 		2BC928C627B4405E0036C043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC928C427B4405E0036C043 /* LaunchScreen.storyboard */; };
@@ -19,7 +19,7 @@
 		2BC928B627B4405C0036C043 /* TinkoffSiriusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkoffSiriusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC928B927B4405C0036C043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BC928BB27B4405C0036C043 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2BC928BD27B4405C0036C043 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2BC928BD27B4405C0036C043 /* StocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewController.swift; sourceTree = "<group>"; };
 		2BC928C027B4405C0036C043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BC928C227B4405E0036C043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BC928C527B4405E0036C043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 		2BC928D027B441C40036C043 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2BC928BD27B4405C0036C043 /* ViewController.swift */,
+				2BC928BD27B4405C0036C043 /* StocksViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -135,7 +135,7 @@
 				};
 			};
 			buildConfigurationList = 2BC928B127B4405C0036C043 /* Build configuration list for PBXProject "TinkoffSiriusApp" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -170,7 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BC928BE27B4405C0036C043 /* ViewController.swift in Sources */,
+				2BC928BE27B4405C0036C043 /* StocksViewController.swift in Sources */,
 				2BC928BA27B4405C0036C043 /* AppDelegate.swift in Sources */,
 				2BC928BC27B4405C0036C043 /* SceneDelegate.swift in Sources */,
 			);
