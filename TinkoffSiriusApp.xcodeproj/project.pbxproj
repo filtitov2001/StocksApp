@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B3568B027B5421100A5196D /* StocksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3568AF27B5421100A5196D /* StocksListViewController.swift */; };
+		2B3568B327B5ABAB00A5196D /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3568B227B5ABAB00A5196D /* Stock.swift */; };
 		2BC928BA27B4405C0036C043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC928B927B4405C0036C043 /* AppDelegate.swift */; };
 		2BC928BC27B4405C0036C043 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC928BB27B4405C0036C043 /* SceneDelegate.swift */; };
 		2BC928BE27B4405C0036C043 /* StocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC928BD27B4405C0036C043 /* StocksViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		2B3568AF27B5421100A5196D /* StocksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksListViewController.swift; sourceTree = "<group>"; };
+		2B3568B227B5ABAB00A5196D /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		2BC928B627B4405C0036C043 /* TinkoffSiriusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkoffSiriusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC928B927B4405C0036C043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BC928BB27B4405C0036C043 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B3568B127B5AA8800A5196D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2B3568B227B5ABAB00A5196D /* Stock.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		2BC928AD27B4405C0036C043 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +68,7 @@
 		2BC928B827B4405C0036C043 /* TinkoffSiriusApp */ = {
 			isa = PBXGroup;
 			children = (
+				2B3568B127B5AA8800A5196D /* Models */,
 				2BC928CD27B440E30036C043 /* App */,
 				2BC928D027B441C40036C043 /* ViewControllers */,
 				2BC928CE27B441710036C043 /* Storyboards */,
@@ -176,6 +187,7 @@
 				2BC928BE27B4405C0036C043 /* StocksViewController.swift in Sources */,
 				2BC928BA27B4405C0036C043 /* AppDelegate.swift in Sources */,
 				2BC928BC27B4405C0036C043 /* SceneDelegate.swift in Sources */,
+				2B3568B327B5ABAB00A5196D /* Stock.swift in Sources */,
 				2B3568B027B5421100A5196D /* StocksListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
