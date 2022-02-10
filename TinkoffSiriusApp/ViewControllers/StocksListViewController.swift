@@ -18,3 +18,18 @@ class StocksListViewController: UITableViewController {
     }
     
 }
+
+extension StocksListViewController {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        100
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "stockCell", for: indexPath)
+        
+        cell.textLabel?.text = "\(indexPath.row)"
+        
+        return cell
+    }
+    
+}
