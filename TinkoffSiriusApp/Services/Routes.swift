@@ -9,6 +9,7 @@
 
 import Foundation
 
-//struct Route: String {
-//
-//}
+enum Route: String {
+    case allStocks = "ref-data/symbols?token=pk_33e1a23d8c1a4260af70fe9912e96971"
+    case stock = "stock/AAPL/quote?&token=pk_33e1a23d8c1a4260af70fe9912e96971"
+}

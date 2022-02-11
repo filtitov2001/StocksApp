@@ -158,6 +158,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Stocks" id="cD9-8g-hw4"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="EZm-LX-jnz" id="SAU-1U-ZvR"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zsn-1N-0xA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
