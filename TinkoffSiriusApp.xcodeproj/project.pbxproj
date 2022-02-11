@@ -71,6 +71,13 @@
 			path = Extentions;
 			sourceTree = "<group>";
 		};
+		2B3568FE27B67E8A00A5196D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		2BC928AD27B4405C0036C043 = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +138,7 @@
 		2BC928D027B441C40036C043 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2B3568FE27B67E8A00A5196D /* Cells */,
 				2BC928BD27B4405C0036C043 /* StocksViewController.swift */,
 				2B3568AF27B5421100A5196D /* StocksListViewController.swift */,
 				2B3568BA27B5BBAE00A5196D /* StockDetailViewController.swift */,

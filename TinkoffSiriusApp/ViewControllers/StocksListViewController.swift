@@ -11,11 +11,11 @@ import UIKit
 
 class StocksListViewController: UITableViewController {
 
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.rowHeight = 80
 
-        // Do any additional setup after loading the view.
     }
     
 }
@@ -35,7 +35,9 @@ extension StocksListViewController {
         content.imageProperties.cornerRadius = tableView.rowHeight/2
         cell.contentConfiguration = content
         
+        cell.accessoryView = UIImageView(image: UIImage(systemName: "arrow.up"))
         
+
         return cell
     }
     
