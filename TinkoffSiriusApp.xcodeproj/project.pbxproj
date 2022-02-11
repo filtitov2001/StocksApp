@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		2B3568B027B5421100A5196D /* StocksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3568AF27B5421100A5196D /* StocksListViewController.swift */; };
 		2B3568B327B5ABAB00A5196D /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3568B227B5ABAB00A5196D /* Stock.swift */; };
+		2B3568B827B5B88200A5196D /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3568B727B5B88200A5196D /* Routes.swift */; };
+		2B3568BB27B5BBAE00A5196D /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3568BA27B5BBAE00A5196D /* StockDetailViewController.swift */; };
+		2B3568FD27B66E5500A5196D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3568FC27B66E5500A5196D /* NetworkManager.swift */; };
 		2BC928BA27B4405C0036C043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC928B927B4405C0036C043 /* AppDelegate.swift */; };
 		2BC928BC27B4405C0036C043 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC928BB27B4405C0036C043 /* SceneDelegate.swift */; };
 		2BC928BE27B4405C0036C043 /* StocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC928BD27B4405C0036C043 /* StocksViewController.swift */; };
@@ -20,6 +23,9 @@
 /* Begin PBXFileReference section */
 		2B3568AF27B5421100A5196D /* StocksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksListViewController.swift; sourceTree = "<group>"; };
 		2B3568B227B5ABAB00A5196D /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
+		2B3568B727B5B88200A5196D /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		2B3568BA27B5BBAE00A5196D /* StockDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
+		2B3568FC27B66E5500A5196D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2BC928B627B4405C0036C043 /* TinkoffSiriusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkoffSiriusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC928B927B4405C0036C043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BC928BB27B4405C0036C043 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +55,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		2B3568B527B5B85C00A5196D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2B3568B727B5B88200A5196D /* Routes.swift */,
+				2B3568FC27B66E5500A5196D /* NetworkManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2B3568B927B5BB0700A5196D /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
 		2BC928AD27B4405C0036C043 = {
 			isa = PBXGroup;
 			children = (
@@ -68,6 +90,8 @@
 		2BC928B827B4405C0036C043 /* TinkoffSiriusApp */ = {
 			isa = PBXGroup;
 			children = (
+				2B3568B927B5BB0700A5196D /* Extentions */,
+				2B3568B527B5B85C00A5196D /* Services */,
 				2B3568B127B5AA8800A5196D /* Models */,
 				2BC928CD27B440E30036C043 /* App */,
 				2BC928D027B441C40036C043 /* ViewControllers */,
@@ -109,6 +133,7 @@
 			children = (
 				2BC928BD27B4405C0036C043 /* StocksViewController.swift */,
 				2B3568AF27B5421100A5196D /* StocksListViewController.swift */,
+				2B3568BA27B5BBAE00A5196D /* StockDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -185,7 +210,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BC928BE27B4405C0036C043 /* StocksViewController.swift in Sources */,
+				2B3568B827B5B88200A5196D /* Routes.swift in Sources */,
+				2B3568BB27B5BBAE00A5196D /* StockDetailViewController.swift in Sources */,
 				2BC928BA27B4405C0036C043 /* AppDelegate.swift in Sources */,
+				2B3568FD27B66E5500A5196D /* NetworkManager.swift in Sources */,
 				2BC928BC27B4405C0036C043 /* SceneDelegate.swift in Sources */,
 				2B3568B327B5ABAB00A5196D /* Stock.swift in Sources */,
 				2B3568B027B5421100A5196D /* StocksListViewController.swift in Sources */,
