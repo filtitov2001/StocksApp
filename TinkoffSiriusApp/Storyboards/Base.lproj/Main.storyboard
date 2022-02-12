@@ -427,9 +427,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Info" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDF-j6-OlP">
-                                <rect key="frame" x="177.5" y="425.5" width="59" height="45"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is simple investor's app, created for show my basic knowleges in Swift and UIKit framework!" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gDF-j6-OlP">
+                                <rect key="frame" x="16" y="337.5" width="382" height="221"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="37"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact with me in Telegram: @thefiltitoff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24N-tH-xF2">
+                                <rect key="frame" x="49" y="841" width="316" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -437,7 +443,10 @@
                         <viewLayoutGuide key="safeArea" id="WuP-yQ-Cmt"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="gDF-j6-OlP" firstAttribute="centerX" secondItem="1vz-re-gp5" secondAttribute="centerX" id="LYd-wU-Daa"/>
+                            <constraint firstItem="gDF-j6-OlP" firstAttribute="leading" secondItem="1vz-re-gp5" secondAttribute="leading" constant="16" id="8cw-Rg-beS"/>
+                            <constraint firstAttribute="trailing" secondItem="gDF-j6-OlP" secondAttribute="trailing" constant="16" id="If4-oe-Gzl"/>
+                            <constraint firstItem="24N-tH-xF2" firstAttribute="centerX" secondItem="1vz-re-gp5" secondAttribute="centerX" id="WST-uQ-dUe"/>
+                            <constraint firstItem="24N-tH-xF2" firstAttribute="bottom" secondItem="WuP-yQ-Cmt" secondAttribute="bottom" id="Ym9-3j-WmH"/>
                             <constraint firstItem="gDF-j6-OlP" firstAttribute="centerY" secondItem="1vz-re-gp5" secondAttribute="centerY" id="l2I-8A-HDx"/>
                         </constraints>
                     </view>
