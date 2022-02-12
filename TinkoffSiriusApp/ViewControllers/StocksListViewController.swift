@@ -12,9 +12,22 @@ import Kingfisher
 
 class StocksListViewController: UITableViewController {
     
-    @IBOutlet var activityIndicator: UIActivityIndicatorView!
     
+    
+    @IBOutlet var activityIndicator: UIActivityIndicatorView!
+
+    private let searchController = UISearchController(searchResultsController: nil)
     private var stocks: [Stock] = []
+    private var filteredStocks: [Stock] = []
+    
+    private var searchBarIsEmpty: Bool {
+        guard let text = searchController.searchBar.text else { return false }
+        return text.isEmpty
+    }
+    
+    private var isFiltering: Bool {
+        searchController.isActive && !searchBarIsEmpty
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,6 +35,12 @@ class StocksListViewController: UITableViewController {
         tableView.rowHeight = 80
         
         fetchAllStocks()
+        
+        searchController.searchResultsUpdater = self
+        searchController.obscuresBackgroundDuringPresentation = false
+        searchController.searchBar.placeholder = "Search"
+        navigationItem.searchController = searchController
+        definesPresentationContext = true
     }
     
     
@@ -29,12 +48,22 @@ class StocksListViewController: UITableViewController {
 
 extension StocksListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        stocks.count
+        if isFiltering {
+            return filteredStocks.count
+        }
+        return stocks.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "stockCell", for: indexPath)
-        let stock = stocks[indexPath.row]
+        var stock: Stock
+        
+        if isFiltering {
+            stock = filteredStocks[indexPath.row]
+        } else {
+            stock = stocks[indexPath.row]
+        }
+        
         
         var content = cell.defaultContentConfiguration()
         content.text = stock.symbol
@@ -48,8 +77,18 @@ extension StocksListViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let navigationVC = segue.destination as? UINavigationController else { return }
         guard let stockDetailVC = navigationVC.topViewController as? StockDetailViewController else { return }
+        
         guard let indexPath = tableView.indexPathForSelectedRow else { return }
-        stockDetailVC.stock = stocks[indexPath.row]
+        
+        var stock: Stock
+        
+        if isFiltering {
+            stock = filteredStocks[indexPath.row]
+        } else {
+            stock = stocks[indexPath.row]
+        }
+        
+        stockDetailVC.stock = stock
     }
     
     
@@ -66,5 +105,19 @@ extension StocksListViewController {
                     print(error)
             }
         }
+    }
+}
+
+extension StocksListViewController: UISearchResultsUpdating {
+    func updateSearchResults(for searchController: UISearchController) {
+        filterContetntForSearchText(searchText: searchController.searchBar.text ?? "")
+    }
+    
+    private func filterContetntForSearchText(searchText: String) {
+        filteredStocks = stocks.filter({ (stock: Stock) -> Bool in
+            return stock.name.lowercased().contains(searchText.lowercased())
+        })
+        
+        tableView.reloadData()
     }
 }

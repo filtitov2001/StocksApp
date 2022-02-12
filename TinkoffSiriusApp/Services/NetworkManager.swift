@@ -19,8 +19,8 @@ class NetworkManager {
         guard let url = URL(string: Constant.stocksURL + Route.allStocks.rawValue + Key.apiKeyStocks) else {
             print("URL was not generated.")
             return
-            
         }
+        
         
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
