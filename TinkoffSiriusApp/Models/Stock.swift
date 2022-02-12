@@ -25,8 +25,16 @@ struct StockInfo: Decodable {
     
     let companyName: String
     let symbol: String
-    var latestPrice: Double
+    
+    let latestPrice: Double
     let previousClose: Double
     let change: Double
+    let changePercent: Double
+    
+    let week52High: Double
+    let week52Low: Double
+    
+    let latestTime: String
+    let isUSMarketOpen: Bool
 }
 
