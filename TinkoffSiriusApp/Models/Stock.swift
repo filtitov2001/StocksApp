@@ -9,27 +9,24 @@
 
 import Foundation
 
-struct FailableDecodable<Base : Decodable> : Decodable {
 
-    let base: Base?
+struct Stock: Decodable {
+    
+    var name: String
+    var symbol: String
 
-    init(from decoder: Decoder) throws {
-        let container = try decoder.singleValueContainer()
-        self.base = try? container.decode(Base.self)
+    
+    var iconName: String {
+        symbol + ".png"
     }
 }
 
-struct Stock: Codable {
+struct StockInfo: Decodable {
     
-    let name: String
+    let companyName: String
     let symbol: String
-//    let open: Double
-//    let high: Double
-//    let low: Double
-    
-    var iconName: Data
+    var latestPrice: Double
+    let previousClose: Double
+    let change: Double
 }
 
-struct AllStocksDescription: Codable {
-    let assets: [Stock]
-}

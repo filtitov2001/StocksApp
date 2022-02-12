@@ -148,7 +148,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="4fj-S8-hpD" kind="presentation" id="Lms-ZW-hhH"/>
+                                    <segue destination="tuo-K3-Zb9" kind="presentation" id="aD6-Ey-kRO"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -270,16 +270,22 @@
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="EkD-fd-wpD">
-                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="Y49-lw-SZO"/>
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="Y49-lw-SZO">
+                            <connections>
+                                <action selector="doneButtonPressed:" destination="K5T-85-sBq" id="6aX-XW-Mw5"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="companySymbolLabel" destination="mBf-b2-Jrj" id="i5O-wx-FRc"/>
+                        <outlet property="priceLabel" destination="SnG-Kd-Cx7" id="SG4-0F-pA9"/>
                         <outlet property="stockImageView" destination="7TW-kG-UlD" id="MnB-gV-wpx"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qz-nt-MeS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1513" y="506"/>
+            <point key="canvasLocation" x="1483" y="506"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="5wl-Ea-NEn">
@@ -395,23 +401,22 @@
             <point key="canvasLocation" x="-1734.375" y="507.04225352112678"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="KFn-5c-6vK">
+        <scene sceneID="e9X-qp-5Nd">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="4fj-S8-hpD" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="tuo-K3-Zb9" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="tDC-3R-xhg"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="4Zf-06-Tqo">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DHd-ie-ev9">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="K5T-85-sBq" kind="relationship" relationship="rootViewController" id="mXy-6b-7WV"/>
+                        <segue destination="K5T-85-sBq" kind="relationship" relationship="rootViewController" id="scG-hM-jFf"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jIo-xC-kfZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Aqr-Ew-QG8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="711" y="506"/>
+            <point key="canvasLocation" x="706.875" y="505.98591549295776"/>
         </scene>
     </scenes>
     <resources>

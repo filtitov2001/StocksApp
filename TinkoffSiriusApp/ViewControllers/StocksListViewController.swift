@@ -8,6 +8,7 @@
 
 
 import UIKit
+import Kingfisher
 
 class StocksListViewController: UITableViewController {
     
@@ -23,6 +24,7 @@ class StocksListViewController: UITableViewController {
         fetchAllStocks()
     }
     
+    
 }
 
 extension StocksListViewController {
@@ -33,25 +35,21 @@ extension StocksListViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "stockCell", for: indexPath)
         let stock = stocks[indexPath.row]
-//        let image = getIconOfStock(for: stock.iconName)
         
         var content = cell.defaultContentConfiguration()
         content.text = stock.symbol
         content.secondaryText = stock.name
-//        if let icon = image {
-//            content.image = UIImage(data: icon)
-//        } else {
-//            content.image = UIImage(named: "AAPL.png")
-//        }
-        content.imageProperties.cornerRadius = tableView.rowHeight/2
         
         cell.contentConfiguration = content
         
-        cell.accessoryView = UIImageView(image: UIImage(systemName: "arrow.up"))
-        
-        cell.accessoryView?.tintColor = .green
-
         return cell
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let navigationVC = segue.destination as? UINavigationController else { return }
+        guard let stockDetailVC = navigationVC.topViewController as? StockDetailViewController else { return }
+        guard let indexPath = tableView.indexPathForSelectedRow else { return }
+        stockDetailVC.stock = stocks[indexPath.row]
     }
     
     
@@ -68,20 +66,5 @@ extension StocksListViewController {
                     print(error)
             }
         }
-    }
-    
-    private func getIconOfStock(for symbol: String) -> Data? {
-        var image: Data? = nil
-        
-        NetworkManager.shared.fetchIconForStock(for: symbol) { result in
-            switch result {
-            case .success(let data):
-                image = data
-            case .failure( _):
-                    break
-            }
-        }
-        
-        return image
     }
 }

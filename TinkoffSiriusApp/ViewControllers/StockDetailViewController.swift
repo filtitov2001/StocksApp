@@ -12,19 +12,52 @@ import UIKit
 class StockDetailViewController: UIViewController {
 
     @IBOutlet var stockImageView: UIImageView!
+    @IBOutlet var priceLabel: UILabel!
+    
+    @IBOutlet var companySymbolLabel: UILabel!
+    
+    var stock: Stock!
+    var currentStock: [StockInfo] = []
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-//        let image = UIImage(named: "V.png")
-//        stockImageView.frame.height = image.size
         
+        fetchStockBySymbol(with: stock.symbol)
+        
+        print(currentStock)
         
     }
     
-    override func viewWillLayoutSubviews() {
-        print(stockImageView.frame.height)
-        print(stockImageView.frame.width)
+    @IBAction func doneButtonPressed(_ sender: UIBarButtonItem) {
+        dismiss(animated: true)
     }
-    
 }
+
+extension StockDetailViewController {
+    
+    private func setupInfoScreen(with stock: StockInfo) {
+ 
+
+        print(stock.symbol)
+
+        companySymbolLabel.text = stock.symbol
+    }
+    
+    private func fetchStockBySymbol(with symbol: String) {
+        
+        NetworkManager.shared.fetchStockBySymbol(symbol: symbol, completion: { result in
+            switch result {
+                case .success(let stock):
+                    DispatchQueue.main.async {
+                        self.setupInfoScreen(with: stock)
+                    }
+                
+                case .failure(let error):
+                    print(error)
+            }
+        })
+        
+    }
+}
+

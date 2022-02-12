@@ -16,7 +16,7 @@ class NetworkManager {
     static let shared = NetworkManager()
 
     func fetchAllStocks(completion: @escaping (Result<[Stock], Error>) -> ()) {
-        guard let url = URL(string: Constant.stocksURL + Route.allStocks.rawValue) else {
+        guard let url = URL(string: Constant.stocksURL + Route.allStocks.rawValue + Key.apiKey) else {
             print("URL was not generated.")
             return
             
@@ -31,8 +31,7 @@ class NetworkManager {
             do {
 
                 let decoder = JSONDecoder()
-                let info = try decoder.decode([FailableDecodable<Stock>].self, from: data)
-                    .compactMap { $0.base }
+                let info = try decoder.decode([Stock].self, from: data)
                 completion(.success(info))
             } catch let error {
                 completion(.failure(error))
@@ -41,21 +40,29 @@ class NetworkManager {
         }.resume()
     }
     
-    func fetchIconForStock(for symbol: String, completion: @escaping (Result<Data, Error>) -> ()) {
-        guard let url = URL(string: Constant.iconURL + symbol) else {
+    func fetchStockBySymbol(symbol: String, completion: @escaping (Result<StockInfo, Error>) -> ()) {
+        guard let url = URL(string: Constant.stocksURL + Route.stock.rawValue + "/\(symbol)/quote?" + Key.apiKey) else {
             print("URL was not generated.")
             return
-            
+
         }
-        
+
+
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
-                    
-                completion(.failure(error as! Error))
+
+                print(error?.localizedDescription ?? "unknown error")
                 return
             }
-            completion(.success(data))
+            do {
 
+                let decoder = JSONDecoder()
+                let info = try decoder.decode(StockInfo.self, from: data)
+                completion(.success(info))
+            } catch let error {
+                completion(.failure(error))
+                print(error.localizedDescription)
+            }
         }.resume()
     }
 }

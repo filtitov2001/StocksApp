@@ -11,3 +11,7 @@ struct Constant {
     static let stocksURL = "https://cloud.iexapis.com/stable/"
     static let iconURL = "https://storage.googleapis.com/iexcloud-hl37opg/api/logos/"
 }
+
+struct Key {
+    static let apiKey = "token=pk_33e1a23d8c1a4260af70fe9912e96971"
+}
