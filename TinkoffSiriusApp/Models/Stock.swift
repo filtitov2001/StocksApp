@@ -14,11 +14,7 @@ struct Stock: Decodable {
     
     var name: String
     var symbol: String
-
     
-    var iconName: String {
-        symbol + ".png"
-    }
 }
 
 struct StockInfo: Decodable {
@@ -38,3 +34,6 @@ struct StockInfo: Decodable {
     let isUSMarketOpen: Bool
 }
 
+struct StockIcon: Decodable {
+    let logo: String
+}

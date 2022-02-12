@@ -8,6 +8,7 @@
 
 
 import UIKit
+import Kingfisher
 
 class StockDetailViewController: UIViewController {
 
@@ -31,8 +32,9 @@ class StockDetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        stockImageView.layer.cornerRadius = stockImageView.frame.width / 2
+        stockImageView.layer.cornerRadius = stockImageView.frame.height / 2
         
+        fetchIconByStock(with: stock.symbol)
         fetchStockBySymbol(with: stock.symbol)
         
     }
@@ -51,7 +53,7 @@ extension StockDetailViewController {
         companySymbolLabel.text = stock.symbol
         
         changePriceLabel.text = String(format: "%.2f", stock.change) + "$"
-        changePercentLabel.text = String(format: "%.2f", stock.changePercent) + "%"
+        changePercentLabel.text = String(format: "%.3f", stock.changePercent) + "%"
         
         if stock.change > 0 {
             setColor(by: .green)
@@ -94,6 +96,21 @@ extension StockDetailViewController {
             }
         })
         
+    }
+    
+    private func fetchIconByStock(with symbol: String) {
+        NetworkManager.shared.fetchIconByStock(symbol: symbol, completion: { result in
+            switch result {
+                case .success(let stock):
+                    DispatchQueue.main.async {
+                        let url = URL(string: stock.logo)
+                        self.stockImageView.kf.setImage(with: url)
+                    }
+                
+                case .failure(let error):
+                    print(error)
+            }
+        })
     }
 }
 
