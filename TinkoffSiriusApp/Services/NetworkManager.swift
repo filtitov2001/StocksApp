@@ -21,13 +21,12 @@ class NetworkManager {
             return
         }
         
-        
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
-                    
                 print(error?.localizedDescription ?? "unknown error")
                 return
             }
+            
             do {
 
                 let decoder = JSONDecoder()
@@ -44,37 +43,10 @@ class NetworkManager {
         guard let url = URL(string: Constant.stocksURL + Route.stock.rawValue + "/\(symbol)/quote?" + Key.apiKeyStocks) else {
             print("URL was not generated.")
             return
-
-        }
-
-
-        URLSession.shared.dataTask(with: url) { data, _, error in
-            guard let data = data else {
-
-                print(error?.localizedDescription ?? "unknown error")
-                return
-            }
-            do {
-
-                let decoder = JSONDecoder()
-                let info = try decoder.decode(StockInfo.self, from: data)
-                completion(.success(info))
-            } catch let error {
-                completion(.failure(error))
-                print(error.localizedDescription)
-            }
-        }.resume()
-    }
-    
-    func fetchIconByStock(symbol: String, completion: @escaping (Result<StockIcon, Error>) -> ()) {
-        guard let url = URL(string: Constant.iconURL + symbol +  Key.apiKeyIcon) else {
-            print("URL was not generated.")
-            return
         }
 
         URLSession.shared.dataTask(with: url) { data, _, error in
             guard let data = data else {
-
                 print(error?.localizedDescription ?? "unknown error")
                 return
             }
@@ -82,7 +54,7 @@ class NetworkManager {
             do {
 
                 let decoder = JSONDecoder()
-                let info = try decoder.decode(StockIcon.self, from: data)
+                let info = try decoder.decode(StockInfo.self, from: data)
                 completion(.success(info))
             } catch let error {
                 completion(.failure(error))
