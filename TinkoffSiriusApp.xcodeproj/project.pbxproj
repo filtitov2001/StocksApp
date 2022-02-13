@@ -18,7 +18,6 @@
 		2B5F690127B85EBF009E8735 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F690027B85EBF009E8735 /* NetworkMonitor.swift */; };
 		2BC928BA27B4405C0036C043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC928B927B4405C0036C043 /* AppDelegate.swift */; };
 		2BC928BC27B4405C0036C043 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC928BB27B4405C0036C043 /* SceneDelegate.swift */; };
-		2BC928BE27B4405C0036C043 /* StocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC928BD27B4405C0036C043 /* StocksViewController.swift */; };
 		2BC928C127B4405C0036C043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC928BF27B4405C0036C043 /* Main.storyboard */; };
 		2BC928C327B4405E0036C043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC928C227B4405E0036C043 /* Assets.xcassets */; };
 		2BC928C627B4405E0036C043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC928C427B4405E0036C043 /* LaunchScreen.storyboard */; };
@@ -39,7 +38,6 @@
 		2BC928B627B4405C0036C043 /* TinkoffSiriusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkoffSiriusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC928B927B4405C0036C043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BC928BB27B4405C0036C043 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2BC928BD27B4405C0036C043 /* StocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewController.swift; sourceTree = "<group>"; };
 		2BC928C027B4405C0036C043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BC928C227B4405E0036C043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BC928C527B4405E0036C043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -149,7 +147,6 @@
 		2BC928D027B441C40036C043 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2BC928BD27B4405C0036C043 /* StocksViewController.swift */,
 				2B3568AF27B5421100A5196D /* StocksListViewController.swift */,
 				2B3568BA27B5BBAE00A5196D /* StockDetailViewController.swift */,
 				2B5F68FE27B85A7C009E8735 /* StartViewController.swift */,
@@ -291,7 +288,6 @@
 			files = (
 				2B5F68FD27B85903009E8735 /* Extension + UIViewController.swift in Sources */,
 				2B5F690127B85EBF009E8735 /* NetworkMonitor.swift in Sources */,
-				2BC928BE27B4405C0036C043 /* StocksViewController.swift in Sources */,
 				2B3568B827B5B88200A5196D /* Routes.swift in Sources */,
 				2B3568BB27B5BBAE00A5196D /* StockDetailViewController.swift in Sources */,
 				2BC928BA27B4405C0036C043 /* AppDelegate.swift in Sources */,
