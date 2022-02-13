@@ -13,9 +13,11 @@
 		2B3568BB27B5BBAE00A5196D /* StockDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3568BA27B5BBAE00A5196D /* StockDetailViewController.swift */; };
 		2B3568FD27B66E5500A5196D /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3568FC27B66E5500A5196D /* NetworkManager.swift */; };
 		2B35690227B69E7900A5196D /* Contants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B35690127B69E7900A5196D /* Contants.swift */; };
+		2B5F68FD27B85903009E8735 /* Extension + UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F68FC27B85903009E8735 /* Extension + UIViewController.swift */; };
+		2B5F68FF27B85A7C009E8735 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F68FE27B85A7C009E8735 /* StartViewController.swift */; };
+		2B5F690127B85EBF009E8735 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F690027B85EBF009E8735 /* NetworkMonitor.swift */; };
 		2BC928BA27B4405C0036C043 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC928B927B4405C0036C043 /* AppDelegate.swift */; };
 		2BC928BC27B4405C0036C043 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC928BB27B4405C0036C043 /* SceneDelegate.swift */; };
-		2BC928BE27B4405C0036C043 /* StocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC928BD27B4405C0036C043 /* StocksViewController.swift */; };
 		2BC928C127B4405C0036C043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC928BF27B4405C0036C043 /* Main.storyboard */; };
 		2BC928C327B4405E0036C043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC928C227B4405E0036C043 /* Assets.xcassets */; };
 		2BC928C627B4405E0036C043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC928C427B4405E0036C043 /* LaunchScreen.storyboard */; };
@@ -30,10 +32,12 @@
 		2B3568BA27B5BBAE00A5196D /* StockDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockDetailViewController.swift; sourceTree = "<group>"; };
 		2B3568FC27B66E5500A5196D /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		2B35690127B69E7900A5196D /* Contants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contants.swift; sourceTree = "<group>"; };
+		2B5F68FC27B85903009E8735 /* Extension + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIViewController.swift"; sourceTree = "<group>"; };
+		2B5F68FE27B85A7C009E8735 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
+		2B5F690027B85EBF009E8735 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
 		2BC928B627B4405C0036C043 /* TinkoffSiriusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkoffSiriusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC928B927B4405C0036C043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BC928BB27B4405C0036C043 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2BC928BD27B4405C0036C043 /* StocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksViewController.swift; sourceTree = "<group>"; };
 		2BC928C027B4405C0036C043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BC928C227B4405E0036C043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BC928C527B4405E0036C043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -68,6 +72,7 @@
 				2B3568B727B5B88200A5196D /* Routes.swift */,
 				2B3568FC27B66E5500A5196D /* NetworkManager.swift */,
 				2B35690127B69E7900A5196D /* Contants.swift */,
+				2B5F690027B85EBF009E8735 /* NetworkMonitor.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -75,15 +80,9 @@
 		2B3568B927B5BB0700A5196D /* Extentions */ = {
 			isa = PBXGroup;
 			children = (
+				2B5F68FC27B85903009E8735 /* Extension + UIViewController.swift */,
 			);
 			path = Extentions;
-			sourceTree = "<group>";
-		};
-		2B3568FE27B67E8A00A5196D /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cells;
 			sourceTree = "<group>";
 		};
 		2BC928AD27B4405C0036C043 = {
@@ -148,10 +147,9 @@
 		2BC928D027B441C40036C043 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				2B3568FE27B67E8A00A5196D /* Cells */,
-				2BC928BD27B4405C0036C043 /* StocksViewController.swift */,
 				2B3568AF27B5421100A5196D /* StocksListViewController.swift */,
 				2B3568BA27B5BBAE00A5196D /* StockDetailViewController.swift */,
+				2B5F68FE27B85A7C009E8735 /* StartViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -170,7 +168,6 @@
 				0884A30F9F50E1108B1BE27C /* Pods-TinkoffSiriusApp.debug.xcconfig */,
 				CE22221964001CA03153921C /* Pods-TinkoffSiriusApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -289,10 +286,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BC928BE27B4405C0036C043 /* StocksViewController.swift in Sources */,
+				2B5F68FD27B85903009E8735 /* Extension + UIViewController.swift in Sources */,
+				2B5F690127B85EBF009E8735 /* NetworkMonitor.swift in Sources */,
 				2B3568B827B5B88200A5196D /* Routes.swift in Sources */,
 				2B3568BB27B5BBAE00A5196D /* StockDetailViewController.swift in Sources */,
 				2BC928BA27B4405C0036C043 /* AppDelegate.swift in Sources */,
+				2B5F68FF27B85A7C009E8735 /* StartViewController.swift in Sources */,
 				2B3568FD27B66E5500A5196D /* NetworkManager.swift in Sources */,
 				2B35690227B69E7900A5196D /* Contants.swift in Sources */,
 				2BC928BC27B4405C0036C043 /* SceneDelegate.swift in Sources */,
@@ -460,7 +459,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thefiltitoff.TinkoffSiriusApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -490,7 +489,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.0.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thefiltitoff.TinkoffSiriusApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
