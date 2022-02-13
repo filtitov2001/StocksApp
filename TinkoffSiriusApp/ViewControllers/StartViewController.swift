@@ -25,4 +25,8 @@ class StartViewController: UIViewController {
             )
         }
     }
+    
+    @IBAction func unwind(for unwindSegue: UIStoryboardSegue) {
+        dismiss(animated: true)
+    }
 }

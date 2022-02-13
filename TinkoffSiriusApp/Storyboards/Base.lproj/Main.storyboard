@@ -125,7 +125,100 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1665" y="1224"/>
+            <point key="canvasLocation" x="-1665" y="1345"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Qwh-cI-g2f">
+            <objects>
+                <viewController id="0sa-P7-Ycw" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kPd-dm-oSe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ZX-BI-s6Z">
+                                <rect key="frame" x="274" y="20" width="30" height="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <connections>
+                                    <segue destination="5sZ-Ui-iP6" kind="unwind" unwindAction="unwindFor:" id="mjw-KZ-Tah"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Xej-uX-D1d">
+                                <rect key="frame" x="75.5" y="446" width="169" height="82"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GitHub: filtitov2001" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vVV-FM-nb1">
+                                        <rect key="frame" x="11" y="0.0" width="147" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Telegram: @thefiltitoff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0V3-sT-A8W">
+                                        <rect key="frame" x="0.0" y="32.5" width="169" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Version 1.0.0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u3Y-2Y-DR3">
+                                        <rect key="frame" x="43.5" y="65" width="82" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3Zt-xf-rbO">
+                                <rect key="frame" x="16" y="106.5" width="288" height="295"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stock" translatesAutoresizingMaskIntoConstraints="NO" id="kOn-IH-PN9">
+                                        <rect key="frame" x="80" y="0.0" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="128" id="22k-R9-Mab"/>
+                                            <constraint firstAttribute="width" constant="128" id="K38-29-4bZ"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="64"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This application's created for qualifying round of Tinkoff-Sirius. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zpx-VD-pH3">
+                                        <rect key="frame" x="17.5" y="136" width="253.5" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I used UITableView to display all stocks and KindFisher framework Asynchronous image downloading." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTb-ej-ffh">
+                                        <rect key="frame" x="11.5" y="185" width="265.5" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You need scroll on StockListVC to show stock's icons " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFj-uP-PEQ">
+                                        <rect key="frame" x="14" y="254" width="260.5" height="41"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="utp-SU-CNK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Zt-xf-rbO" firstAttribute="leading" secondItem="kPd-dm-oSe" secondAttribute="leading" constant="16" id="4eF-xc-gzP"/>
+                            <constraint firstItem="3Zt-xf-rbO" firstAttribute="centerY" secondItem="kPd-dm-oSe" secondAttribute="centerY" constant="-30" id="9Ay-zn-kRQ"/>
+                            <constraint firstItem="0ZX-BI-s6Z" firstAttribute="top" secondItem="utp-SU-CNK" secondAttribute="top" constant="20" id="abo-qN-eeA"/>
+                            <constraint firstItem="Xej-uX-D1d" firstAttribute="centerX" secondItem="kPd-dm-oSe" secondAttribute="centerX" id="eia-nd-aCR"/>
+                            <constraint firstItem="utp-SU-CNK" firstAttribute="bottom" secondItem="Xej-uX-D1d" secondAttribute="bottom" constant="40" id="n7V-La-9tC"/>
+                            <constraint firstAttribute="trailing" secondItem="3Zt-xf-rbO" secondAttribute="trailing" constant="16" id="xNZ-T1-Gr8"/>
+                            <constraint firstItem="utp-SU-CNK" firstAttribute="trailing" secondItem="0ZX-BI-s6Z" secondAttribute="trailing" constant="16" id="yTS-66-82x"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dki-Xa-3bZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XvK-R4-gHu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="5sZ-Ui-iP6" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-877.5" y="1291.9014084507041"/>
         </scene>
         <!--Stocks-->
         <scene sceneID="ybB-b7-gG7">
@@ -411,6 +504,9 @@
                                                 <integer key="value" value="10"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="0sa-P7-Ycw" kind="presentation" modalPresentationStyle="fullScreen" id="IWR-6a-Qev"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -472,6 +568,7 @@
     <resources>
         <image name="dollarsign.circle.fill" catalog="system" width="128" height="121"/>
         <image name="info.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="stock" width="2000" height="2000"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
