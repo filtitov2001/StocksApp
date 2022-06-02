@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13A2391EF497A81DA66FEABA /* Pods_StocksApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1BB8CE82E158187CDF71AE34 /* Pods_StocksApp.framework */; };
 		2B3568B027B5421100A5196D /* StocksListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3568AF27B5421100A5196D /* StocksListViewController.swift */; };
 		2B3568B327B5ABAB00A5196D /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3568B227B5ABAB00A5196D /* Stock.swift */; };
 		2B3568B827B5B88200A5196D /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3568B727B5B88200A5196D /* Routes.swift */; };
@@ -21,11 +22,11 @@
 		2BC928C127B4405C0036C043 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC928BF27B4405C0036C043 /* Main.storyboard */; };
 		2BC928C327B4405E0036C043 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BC928C227B4405E0036C043 /* Assets.xcassets */; };
 		2BC928C627B4405E0036C043 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BC928C427B4405E0036C043 /* LaunchScreen.storyboard */; };
-		68933B6D641EAE5D76A0033B /* Pods_TinkoffSiriusApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A06A5316C320A94209248AA /* Pods_TinkoffSiriusApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		0884A30F9F50E1108B1BE27C /* Pods-TinkoffSiriusApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinkoffSiriusApp.debug.xcconfig"; path = "Target Support Files/Pods-TinkoffSiriusApp/Pods-TinkoffSiriusApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1BB8CE82E158187CDF71AE34 /* Pods_StocksApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StocksApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B3568AF27B5421100A5196D /* StocksListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StocksListViewController.swift; sourceTree = "<group>"; };
 		2B3568B227B5ABAB00A5196D /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 		2B3568B727B5B88200A5196D /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
@@ -35,15 +36,16 @@
 		2B5F68FC27B85903009E8735 /* Extension + UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension + UIViewController.swift"; sourceTree = "<group>"; };
 		2B5F68FE27B85A7C009E8735 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		2B5F690027B85EBF009E8735 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
-		2BC928B627B4405C0036C043 /* TinkoffSiriusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkoffSiriusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2BC928B627B4405C0036C043 /* StocksApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StocksApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BC928B927B4405C0036C043 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BC928BB27B4405C0036C043 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		2BC928C027B4405C0036C043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BC928C227B4405E0036C043 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BC928C527B4405E0036C043 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BC928C727B4405E0036C043 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6A06A5316C320A94209248AA /* Pods_TinkoffSiriusApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinkoffSiriusApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDD788C0BF1555E1A43334D6 /* Pods-StocksApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StocksApp.release.xcconfig"; path = "Target Support Files/Pods-StocksApp/Pods-StocksApp.release.xcconfig"; sourceTree = "<group>"; };
 		CE22221964001CA03153921C /* Pods-TinkoffSiriusApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinkoffSiriusApp.release.xcconfig"; path = "Target Support Files/Pods-TinkoffSiriusApp/Pods-TinkoffSiriusApp.release.xcconfig"; sourceTree = "<group>"; };
+		FEDCAF0810241884081E8261 /* Pods-StocksApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StocksApp.debug.xcconfig"; path = "Target Support Files/Pods-StocksApp/Pods-StocksApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68933B6D641EAE5D76A0033B /* Pods_TinkoffSiriusApp.framework in Frameworks */,
+				13A2391EF497A81DA66FEABA /* Pods_StocksApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,7 +90,7 @@
 		2BC928AD27B4405C0036C043 = {
 			isa = PBXGroup;
 			children = (
-				2BC928B827B4405C0036C043 /* TinkoffSiriusApp */,
+				2BC928B827B4405C0036C043 /* StocksApp */,
 				2BC928B727B4405C0036C043 /* Products */,
 				D7DEF8B5792280FAFE8DB8E8 /* Pods */,
 				B3E23BF24D3DDE6243EBD8C3 /* Frameworks */,
@@ -98,12 +100,12 @@
 		2BC928B727B4405C0036C043 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2BC928B627B4405C0036C043 /* TinkoffSiriusApp.app */,
+				2BC928B627B4405C0036C043 /* StocksApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2BC928B827B4405C0036C043 /* TinkoffSiriusApp */ = {
+		2BC928B827B4405C0036C043 /* StocksApp */ = {
 			isa = PBXGroup;
 			children = (
 				2B3568B927B5BB0700A5196D /* Extentions */,
@@ -114,7 +116,7 @@
 				2BC928CE27B441710036C043 /* Storyboards */,
 				2BC928CF27B441840036C043 /* Resouces */,
 			);
-			path = TinkoffSiriusApp;
+			path = StocksApp;
 			sourceTree = "<group>";
 		};
 		2BC928CD27B440E30036C043 /* App */ = {
@@ -157,7 +159,7 @@
 		B3E23BF24D3DDE6243EBD8C3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				6A06A5316C320A94209248AA /* Pods_TinkoffSiriusApp.framework */,
+				1BB8CE82E158187CDF71AE34 /* Pods_StocksApp.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -167,6 +169,8 @@
 			children = (
 				0884A30F9F50E1108B1BE27C /* Pods-TinkoffSiriusApp.debug.xcconfig */,
 				CE22221964001CA03153921C /* Pods-TinkoffSiriusApp.release.xcconfig */,
+				FEDCAF0810241884081E8261 /* Pods-StocksApp.debug.xcconfig */,
+				BDD788C0BF1555E1A43334D6 /* Pods-StocksApp.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -174,9 +178,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2BC928B527B4405C0036C043 /* TinkoffSiriusApp */ = {
+		2BC928B527B4405C0036C043 /* StocksApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BC928CA27B4405E0036C043 /* Build configuration list for PBXNativeTarget "TinkoffSiriusApp" */;
+			buildConfigurationList = 2BC928CA27B4405E0036C043 /* Build configuration list for PBXNativeTarget "StocksApp" */;
 			buildPhases = (
 				209A3186E84A6D4B5C4C8BD8 /* [CP] Check Pods Manifest.lock */,
 				2BC928B227B4405C0036C043 /* Sources */,
@@ -188,9 +192,9 @@
 			);
 			dependencies = (
 			);
-			name = TinkoffSiriusApp;
+			name = StocksApp;
 			productName = TinkoffSiriusApp;
-			productReference = 2BC928B627B4405C0036C043 /* TinkoffSiriusApp.app */;
+			productReference = 2BC928B627B4405C0036C043 /* StocksApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +212,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2BC928B127B4405C0036C043 /* Build configuration list for PBXProject "TinkoffSiriusApp" */;
+			buildConfigurationList = 2BC928B127B4405C0036C043 /* Build configuration list for PBXProject "StocksApp" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -221,7 +225,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2BC928B527B4405C0036C043 /* TinkoffSiriusApp */,
+				2BC928B527B4405C0036C043 /* StocksApp */,
 			);
 		};
 /* End PBXProject section */
@@ -255,7 +259,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TinkoffSiriusApp-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-StocksApp-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -268,15 +272,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TinkoffSiriusApp/Pods-TinkoffSiriusApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-StocksApp/Pods-StocksApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-TinkoffSiriusApp/Pods-TinkoffSiriusApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-StocksApp/Pods-StocksApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinkoffSiriusApp/Pods-TinkoffSiriusApp-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StocksApp/Pods-StocksApp-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -440,7 +444,7 @@
 		};
 		2BC928CB27B4405E0036C043 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0884A30F9F50E1108B1BE27C /* Pods-TinkoffSiriusApp.debug.xcconfig */;
+			baseConfigurationReference = FEDCAF0810241884081E8261 /* Pods-StocksApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -448,7 +452,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RB3BCBLCA6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TinkoffSiriusApp/App/Info.plist;
+				INFOPLIST_FILE = StocksApp/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Investor;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -470,7 +474,7 @@
 		};
 		2BC928CC27B4405E0036C043 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CE22221964001CA03153921C /* Pods-TinkoffSiriusApp.release.xcconfig */;
+			baseConfigurationReference = BDD788C0BF1555E1A43334D6 /* Pods-StocksApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -478,7 +482,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = RB3BCBLCA6;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = TinkoffSiriusApp/App/Info.plist;
+				INFOPLIST_FILE = StocksApp/App/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = Investor;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -501,7 +505,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2BC928B127B4405C0036C043 /* Build configuration list for PBXProject "TinkoffSiriusApp" */ = {
+		2BC928B127B4405C0036C043 /* Build configuration list for PBXProject "StocksApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BC928C827B4405E0036C043 /* Debug */,
@@ -510,7 +514,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BC928CA27B4405E0036C043 /* Build configuration list for PBXNativeTarget "TinkoffSiriusApp" */ = {
+		2BC928CA27B4405E0036C043 /* Build configuration list for PBXNativeTarget "StocksApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BC928CB27B4405E0036C043 /* Debug */,

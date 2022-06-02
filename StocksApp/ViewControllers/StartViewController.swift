@@ -1,6 +1,6 @@
 //
 //  StartViewController.swift
-//  TinkoffSiriusApp
+//  StocksApp
 //
 //  Created by Felix Titov on 13.02.2022.
 //  Copyright © 2022 by Felix Titov. All rights reserved.
