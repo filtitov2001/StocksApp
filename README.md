@@ -2,7 +2,9 @@
 
 This app created for qualifying round of [Tinkoff](https://github.com/Tinkoff) Sirius Programm.<br/>
 App showing info about stocks on market with stock's photo parsing and getting info from network.<br/>
-I also used UISearchController first time to filter info. Install and check it!
+I also used UISearchController first time to filter info. 
+
+Install and check it!
 
 <div align="center">
   
@@ -29,7 +31,6 @@ I also used UISearchController first time to filter info. Install and check it!
   
   ![output 4](https://user-images.githubusercontent.com/56549889/171742293-53c9095f-8755-4d53-870b-2b6f4159b0c8.gif)
 
-  
 </div>
 
 ## Tech Stack
@@ -44,7 +45,7 @@ I also used UISearchController first time to filter info. Install and check it!
 1. Install project from GitHub
 
 ```bash
-  git clone https://github.com/filtitov2001/ToDoFirebaseApp/
+  git clone https://github.com/filtitov2001/StockApp/
 ```
 2. Go to app folder
 ```bash
